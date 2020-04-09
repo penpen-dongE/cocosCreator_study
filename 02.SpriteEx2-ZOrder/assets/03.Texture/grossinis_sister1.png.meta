@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "ddd459cb-4698-4b4e-81f7-8c36dfd37219",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 104,
+  "height": 278,
+  "platformSettings": {},
+  "subMetas": {
+    "grossinis_sister1": {
+      "ver": "1.0.4",
+      "uuid": "81432af6-c3a9-4700-94b8-8c7ca858c752",
+      "rawTextureUuid": "ddd459cb-4698-4b4e-81f7-8c36dfd37219",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": -23,
+      "trimX": 3,
+      "trimY": 49,
+      "width": 96,
+      "height": 226,
+      "rawWidth": 104,
+      "rawHeight": 278,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
