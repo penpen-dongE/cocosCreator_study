@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "d26409cc-4bb6-4977-8bf4-1bcdbd01cd3e",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 170,
+  "height": 242,
+  "platformSettings": {},
+  "subMetas": {
+    "grossini_dance_02": {
+      "ver": "1.0.4",
+      "uuid": "c931b5d2-8fa2-4a8d-8eb5-edffdd960a40",
+      "rawTextureUuid": "d26409cc-4bb6-4977-8bf4-1bcdbd01cd3e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -12,
+      "offsetY": -2,
+      "trimX": 10,
+      "trimY": 14,
+      "width": 126,
+      "height": 218,
+      "rawWidth": 170,
+      "rawHeight": 242,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
