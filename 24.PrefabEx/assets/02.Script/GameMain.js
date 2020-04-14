@@ -26,12 +26,15 @@ cc.Class({
 
     // update (dt) {},
 
+
     doCreate: function () {
         const enemy_root = this.node.getChildByName("enemy");
         // const enemy_root = cc.find("Canvas/enemy");
 
+        // cc.log("CREATE button pushed");
+
         // instantiate node from prefab
-        var enemy = cc.instantiate(this.enemy);
+        var enemy = cc.instantiate(this.enemy); // instantiate로 prefab을 동적으로 생성
         enemy.name = "enemy4";
         enemy.addComponent("SelfRemove");
         enemy.position = new cc.Vec2(-140, 50);
@@ -42,6 +45,7 @@ cc.Class({
     },
 
     doRemove: function () {
+        //객체를 찾기 위해 getChildByName 사용
         const enemy_root = this.node.getChildByName("enemy");
         const enemy = enemy_root.getChildByName("enemy4");
         // const enemy = cc.find("Canvas/enemy/enemy4");
@@ -49,12 +53,13 @@ cc.Class({
         enemy.destroy();
     },
 
-    dogetComponent: function () {
-        const enemy = cc.find("Canvas/enemy/enemy3");
+    doGetComponent: function () {
+        const enemy = cc.find("Canvas/enemy/enemy2");
         const anim = enemy.getComponent(cc.Animation);
         const animState = anim.getAnimationState('dance');
 
         if (animState.isPaused) {
+            cc.log("enemy paused!!")
             anim.resume("dance");
         } else {
             anim.pause("dance");
@@ -62,10 +67,11 @@ cc.Class({
     },
 
     doCallFuncAll: function () {
-        const enemy = this.ndoe.getChildByName("enemy");
+        const enemy = this.node.getChildByName("enemy");
         // let enemies = [];
         for (var i = 0; i < enemy.childrenCount; i++) {
             //enemies[i] = enemy.children[i];
+            // cc.log(enemy.children[i]);
             let script = enemy.children[i].getComponent("Dance");
             script.doSomething();
         }
