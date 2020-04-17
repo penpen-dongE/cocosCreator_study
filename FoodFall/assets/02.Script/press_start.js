@@ -9,6 +9,7 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad: function () {
+
         // 게임화면을 미리 로드시켜놓는다. 
         cc.director.preloadScene("GameScene");
 
@@ -17,6 +18,7 @@ cc.Class({
             cc.director.loadScene("GameScene");
             cc.log("게임화면으로 전환");
         });
+
     },
 
     start () {
