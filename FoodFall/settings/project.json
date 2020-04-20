@@ -24,13 +24,13 @@
   },
   "assets-sort-type": "name",
   "facebook": {
-    "appID": "",
+    "appID": "319214755715145",
     "audience": {
-      "enable": false
+      "enable": true
     },
-    "enable": false,
+    "enable": true,
     "live": {
-      "enable": false
+      "enable": true
     }
   }
 }
